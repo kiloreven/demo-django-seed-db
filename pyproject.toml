@@ -1,0 +1,10 @@
+[tool.poetry]
+name = "demo-django-seed-db"
+version = "0.1.0"
+description = ""
+authors = ["Karl Fredrik Haugland <kfh@tla.wtf>"]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+django = "^5.0.1"
+psycopg = "^3.1.17"
