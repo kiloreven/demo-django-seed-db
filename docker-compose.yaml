@@ -6,6 +6,8 @@ services:
             - "5432:5432"
         volumes:
             - database:/var/lib/postgresql/data
+            # Comment out the line below to run without seed database
+            - ./seed-db.sql:/docker-entrypoint-initdb.d/seed-db.sql
         environment:
             POSTGRES_PASSWORD: "postgres"
 
